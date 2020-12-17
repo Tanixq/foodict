@@ -1,0 +1,27 @@
+<!-- menu  -->
+
+<div
+  style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+  "
+>
+  <div style="margin-bottom: 2rem">Blogs</div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+    <% blogs.forEach(blog => { %>
+      <div class="col">
+        <div class="card h-100">
+          <img src=<%= blog.img %>  class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title"><%= blog.name %> </h5>
+            <p class="card-text"><%= blog.description %> </p>
+          </div>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+</div>

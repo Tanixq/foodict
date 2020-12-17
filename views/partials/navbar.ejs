@@ -1,0 +1,18 @@
+<!-- navBar  -->
+<nav class="navbar navbar-light bg-light">
+  <div style="margin: 0 5rem; padding: 2rem">
+    <a class="navbar-brand" href="/">Foodict</a>
+  </div>
+
+  <% if (login) { %>
+  <div style="margin: 0 5rem 0 0">
+    <a href="/user/profile" type="button" class="btn btn-outline-dark">Profile</a>
+    <a href="/logout" type="button" class="btn btn-outline-dark">Logout</a>
+  </div>
+  <% }else{ %>
+  <div style="margin: 0 5rem 0 0">
+    <a href="/login" type="button" class="btn btn-outline-dark">Login</a>
+    <a href="/sign-up" type="button" class="btn btn-dark">Create an account</a>
+  </div>
+  <% } %>
+</nav>

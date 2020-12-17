@@ -1,0 +1,21 @@
+<%- include('./partials/header.ejs') %> <%- include('./partials/navbar.ejs') %>
+
+
+
+  <div style="display: flex; flex-direction: column; align-items: center;">
+
+
+  <form style="display: flex; flex-direction: column; align-items: center;" action="/login" method="POST">
+    <label for="email">Email</label>
+    <input id="email" class="form-control" style="padding: 5px; margin: 5px 0;" type="email" name="email" />
+    <label for="password">Password</label>
+    <input id="password" class="form-control" style="padding: 5px; margin: 5px 0;" type="password" name="password" />
+    <button class="btn btn-dark" type="submit" style="margin-top: 25px;">Login</button>
+  </form>
+  <p>Not have account</p>
+  <a href="/sign-up">Create an account</a>
+
+  
+</div>
+
+<%- include('./partials/footer.ejs') %>
