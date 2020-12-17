@@ -7,7 +7,7 @@
     "node": "14.15.1"
   },
   "scripts": {
-    "node": "index.js"
+    "start": "node index.js"
   },
   "author": "Tanishq Patel",
   "license": "ISC",
